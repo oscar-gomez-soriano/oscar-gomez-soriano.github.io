@@ -1,9 +1,61 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi primera web en GitHub Pages</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Óscar Gómez Soriano — Técnico de Sistemas</title>
+<meta name="description" content="Portfolio de Óscar Gómez Soriano, Técnico de Sistemas: Linux, Windows, Redes, Azure, Microsoft 365, Docker, VMware, Veeam, Active Directory y más." />
+<meta property="og:title" content="Óscar Gómez Soriano — Técnico de Sistemas" />
+<meta property="og:description" content="Portfolio de Óscar Gómez Soriano, Técnico de Sistemas: Linux, Windows, Redes, Azure, Microsoft 365, Docker, VMware, Veeam, Active Directory y más." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tuusuario.github.io/" />
+<meta name="theme-color" content="#0ea5e9" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "Óscar Gómez Soriano",
+"jobTitle": "Técnico de Sistemas",
+"email": "mailto:oscar.so966@gmail.com",
+"url": "https://tuusuario.github.io/",
+"sameAs": [
+"https://www.linkedin.com/in/oscar-gomez-soriano/"
+],
+"knowsAbout": [
+"Linux", "Windows", "Redes TCP/IP", "Active Directory", "Azure", "Microsoft 365", "Docker", "VMware", "Hyper-V", "Veeam", "DNS", "DHCP", "VPN"
+]
+}
+</script>
 </head>
 <body>
-  <h1>Hola, mundo desde GitHub Pages 🚀</h1>
+<!-- Aquí va exactamente el mismo contenido HTML del portfolio, sin los estilos inline -->
+<!-- ... (contenido igual que antes) ... -->
+
+
+<script>
+// Año
+document.getElementById('year').textContent = new Date().getFullYear();
+
+
+// Theme toggle
+const key = 'pref-theme';
+const btn = document.getElementById('themeToggle');
+const setTheme = (t)=>{ document.documentElement.classList.toggle('light', t==='light'); localStorage.setItem(key, t)};
+const cur = localStorage.getItem(key) || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+setTheme(cur);
+btn.addEventListener('click', ()=> setTheme(document.documentElement.classList.contains('light') ? 'dark' : 'light'));
+
+
+// Reveal on scroll
+const obs = new IntersectionObserver((entries)=>{
+entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target) } })
+}, {threshold:.08});
+document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>
