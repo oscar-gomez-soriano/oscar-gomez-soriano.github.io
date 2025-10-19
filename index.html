@@ -1,61 +1,200 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Óscar Gómez Soriano — Técnico de Sistemas</title>
-<meta name="description" content="Portfolio de Óscar Gómez Soriano, Técnico de Sistemas: Linux, Windows, Redes, Azure, Microsoft 365, Docker, VMware, Veeam, Active Directory y más." />
-<meta property="og:title" content="Óscar Gómez Soriano — Técnico de Sistemas" />
-<meta property="og:description" content="Portfolio de Óscar Gómez Soriano, Técnico de Sistemas: Linux, Windows, Redes, Azure, Microsoft 365, Docker, VMware, Veeam, Active Directory y más." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tuusuario.github.io/" />
-<meta name="theme-color" content="#0ea5e9" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Person",
-"name": "Óscar Gómez Soriano",
-"jobTitle": "Técnico de Sistemas",
-"email": "mailto:oscar.so966@gmail.com",
-"url": "https://tuusuario.github.io/",
-"sameAs": [
-"https://www.linkedin.com/in/oscar-gomez-soriano/"
-],
-"knowsAbout": [
-"Linux", "Windows", "Redes TCP/IP", "Active Directory", "Azure", "Microsoft 365", "Docker", "VMware", "Hyper-V", "Veeam", "DNS", "DHCP", "VPN"
-]
-}
-</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Óscar Gómez Soriano — Técnico de Sistemas</title>
+  <meta name="description" content="Portfolio de Óscar Gómez Soriano, Técnico de Sistemas: Linux, Windows, Redes, Azure, Microsoft 365, Docker, VMware, Veeam, Active Directory y más." />
+  <meta property="og:title" content="Óscar Gómez Soriano — Técnico de Sistemas" />
+  <meta property="og:description" content="Portfolio de Óscar Gómez Soriano, Técnico de Sistemas: Linux, Windows, Redes, Azure, Microsoft 365, Docker, VMware, Veeam, Active Directory y más." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tuusuario.github.io/" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Óscar Gómez Soriano",
+    "jobTitle": "Técnico de Sistemas",
+    "email": "mailto:oscar.so966@gmail.com",
+    "url": "https://tuusuario.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/oscar-gomez-soriano/"
+    ],
+    "knowsAbout": [
+      "Linux", "Windows", "Redes TCP/IP", "Active Directory", "Azure", "Microsoft 365", "Docker", "VMware", "Hyper-V", "Veeam", "DNS", "DHCP", "VPN"
+    ]
+  }
+  </script>
 </head>
 <body>
-<!-- Aquí va exactamente el mismo contenido HTML del portfolio, sin los estilos inline -->
-<!-- ... (contenido igual que antes) ... -->
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">
+        <div class="logo-badge"><span>OG</span></div>
+        <div>
+          <div>Óscar Gómez</div>
+          <small class="muted">Técnico de Sistemas</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn ghost" aria-label="Cambiar tema">🌓</button>
+        <a class="btn primary" href="#contacto">Contactar</a>
+      </div>
+    </div>
+  </header>
 
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-text" data-reveal>
+        <span class="tag">Disponible · Valencia · Remoto/On-site</span>
+        <h1>Diseño, desplegado y mantengo <span class="gradient">infraestructura y soporte</span> que no se cae.</h1>
+        <p>Especializado en entornos Windows/Linux, redes, virtualización, Microsoft 365/Azure y automatización con Docker. Me centro en la fiabilidad, la seguridad y la experiencia de usuario.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#experiencia">Ver experiencia</a>
+          <a class="btn" href="mailto:oscar.so966@gmail.com">Enviar email</a>
+        </div>
+        <div class="hero-grid">
+          <div class="kpi"><div class="muted">Sistemas</div><b>Windows · Linux</b></div>
+          <div class="kpi"><div class="muted">Cloud</div><b>Azure · M365</b></div>
+          <div class="kpi"><div class="muted">Virtualización</div><b>VMware · Hyper-V</b></div>
+        </div>
+      </div>
+      <div class="hero-card" data-reveal>
+        <h3 style="margin-top:0">Stack principal</h3>
+        <div class="chips">
+          <span class="chip">Active Directory</span>
+          <span class="chip">DNS/DHCP</span>
+          <span class="chip">TCP/IP</span>
+          <span class="chip">Azure</span>
+          <span class="chip">Microsoft 365</span>
+          <span class="chip">Intune</span>
+          <span class="chip">Docker</span>
+          <span class="chip">VMware</span>
+          <span class="chip">Hyper-V</span>
+          <span class="chip">Veeam</span>
+          <span class="chip">VPN</span>
+          <span class="chip">PowerShell</span>
+        </div>
+        <small class="muted">Inglés B2 · Valenciano B2</small>
+      </div>
+    </section>
 
-<script>
-// Año
-document.getElementById('year').textContent = new Date().getFullYear();
+    <!-- SOBRE MI -->
+    <section id="sobre-mi">
+      <h2 class="section-title" data-reveal>Sobre mí</h2>
+      <p class="muted" data-reveal>Soy Técnico de Sistemas con foco en soporte de primer/segundo nivel, despliegue de infraestructura y hardening básico. Me gusta documentar, automatizar y dejar todo listo para operar sin fricciones.</p>
+    </section>
 
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title" data-reveal>Habilidades clave</h2>
+      <div class="chips" data-reveal>
+        <span class="chip">Linux</span>
+        <span class="chip">Windows</span>
+        <span class="chip">Redes TCP/IP</span>
+        <span class="chip">DHCP</span>
+        <span class="chip">Active Directory</span>
+        <span class="chip">DNS</span>
+        <span class="chip">Azure Cloud</span>
+        <span class="chip">Microsoft 365</span>
+        <span class="chip">VPN</span>
+        <span class="chip">Docker</span>
+        <span class="chip">Hyper-V</span>
+        <span class="chip">VMware</span>
+        <span class="chip">PowerShell</span>
+        <span class="chip">Veeam</span>
+      </div>
+    </section>
 
-// Theme toggle
-const key = 'pref-theme';
-const btn = document.getElementById('themeToggle');
-const setTheme = (t)=>{ document.documentElement.classList.toggle('light', t==='light'); localStorage.setItem(key, t)};
-const cur = localStorage.getItem(key) || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-setTheme(cur);
-btn.addEventListener('click', ()=> setTheme(document.documentElement.classList.contains('light') ? 'dark' : 'light'));
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+      <h2 class="section-title" data-reveal>Experiencia</h2>
+      <div class="timeline">
+        <article class="t-item" data-reveal>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <h4>IT Support Consultant — Capitole</h4>
+            <div class="meta">06/2024 – Actualidad</div>
+            <p class="muted">Soporte y operación de infraestructuras para retail (Leroy Merlin): resolución de incidencias hardware/software, CPDs, redes, impresoras, periféricos, coordinación con proveedores y despliegues en tienda.</p>
+          </div>
+        </article>
+        <article class="t-item" data-reveal>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <h4>Técnico de Sistemas — Colaboratic</h4>
+            <div class="meta">03/2024 – 05/2024</div>
+            <ul class="muted">
+              <li>Soporte microinformático (Windows, Linux y Mac).</li>
+              <li>Redes LAN/WAN, firewalls y VPN.</li>
+              <li>Seguridad y backups con Veeam.</li>
+              <li>Servidores Windows/Linux: DNS, DHCP, correo, VMware/Hyper-V.</li>
+              <li>Servicios Microsoft 365/Azure: AD, Exchange, Teams, Intune.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+      <div data-reveal>
+        <h2 class="section-title">Contacto</h2>
+        <p class="muted">¿Hablamos? Suelo responder en 24h.</p>
+        <div class="grid">
+          <div class="card">
+            <h4>Correo</h4>
+            <a href="mailto:oscar.so966@gmail.com">✉️ oscar.so966@gmail.com</a>
+          </div>
+          <div class="card">
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/in/oscar-gomez-soriano/" target="_blank" rel="noopener">in/oscar-gomez-soriano</a>
+          </div>
+          <div class="card">
+            <h4>Teléfono</h4>
+            <span class="muted">601 24 51 68</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-// Reveal on scroll
-const obs = new IntersectionObserver((entries)=>{
-entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target) } })
-}, {threshold:.08});
-document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
-</script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap">
+        <small>© <span id="year"></span> Óscar Gómez Soriano</small>
+        <small>Hecho con HTML + CSS + JS y alojado en GitHub Pages</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const key = 'pref-theme';
+    const btn = document.getElementById('themeToggle');
+    const setTheme = (t)=>{ document.documentElement.classList.toggle('light', t==='light'); localStorage.setItem(key, t)};
+    const cur = localStorage.getItem(key) || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    setTheme(cur);
+    btn.addEventListener('click', ()=> setTheme(document.documentElement.classList.contains('light') ? 'dark' : 'light'));
+
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target) } })
+    }, {threshold:.08});
+    document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+  </script>
 </body>
 </html>
